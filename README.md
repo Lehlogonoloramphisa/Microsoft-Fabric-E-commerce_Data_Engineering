@@ -10,7 +10,7 @@ The solution ingests structured CSV and semi-structured JSON data into a Bronze 
 
 The diagram below shows how data moves through the Microsoft Fabric project, from source files to business intelligence reports.
 
-![Microsoft Fabric End-to-End Data Flow](architecture/project-dataflow.png)
+![Microsoft Fabric End-to-End Data Flow](architecture/End-to-End-Data-Pipeline.png)
 
 ## Architecture and Implementation
 
