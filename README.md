@@ -91,17 +91,3 @@ Microsoft-Fabric-End-to-End-Data-Engineering/
 │   └── project-documentation.pdf
 └── .gitignore
 ```
-
-## Running the Project
-
-This project was developed for a Microsoft Fabric workspace. To reproduce it:
-
-1. Create or select a Fabric workspace and the required Bronze, Silver, and Gold Lakehouses.
-2. Provide the structured CSV and unstructured JSON source files and the metadata JSON files expected by the pipelines.
-3. Import the pipeline definitions from `pipelines/`, then configure their Fabric connections, Lakehouse destinations, and source references.
-4. Run `pl_ingest_structured` and `pl_ingest_unstructured` to ingest the source files into Bronze.
-5. Attach `nb_silver_transform.ipynb` to the appropriate Fabric Lakehouse and run it.
-6. Run `nb_gold_transform.ipynb` after Silver tables are available.
-7. Review the Delta tables, rejected orders, notebook validation output, and sales reconciliation.
-
-Source datasets, workspace-specific connection credentials, and Fabric workspace resources are not included. Configure these for your own environment before running the pipelines or notebooks.
